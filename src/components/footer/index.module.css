@@ -1,0 +1,43 @@
+.wrapper {
+  padding-top: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.logo img {
+  width: 200px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.title {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.introduce p {
+  max-width: 300px;
+}
+
+.wrapperInfor {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.imgChanel {
+  display: flex;
+  gap: 20px;
+}
+
+.imgChanel img {
+  width: 50px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.accuracy {
+  width: 200px;
+  height: auto;
+}
