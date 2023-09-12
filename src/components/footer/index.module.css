@@ -1,13 +1,13 @@
 .wrapper {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-left: 150px;
   padding-right: 150px;
 }
 
 .logo img {
   width: 200px;
-  height: 100px;
-  border-radius: 50px;
+  height: auto;
+  padding-bottom: 20px;
 }
 
 .title {

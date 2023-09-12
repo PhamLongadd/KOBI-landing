@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.logo}>
-        <img src="KOBIlogo.jpg" alt="icon" />
+        <img src="Asset 1.png" alt="icon" />
       </div>
       <div className={styles.title}>
         <div className={styles.contactInfor}>
