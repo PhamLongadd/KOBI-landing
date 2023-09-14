@@ -91,6 +91,14 @@
   padding-right: 150px;
 }
 
+.wrapperProduct h1 {
+  color: rgb(246, 138, 51);
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(34, 85, 121);
+  width: 500px;
+}
+
 .listProduct {
   display: flex;
   justify-content: space-between;
@@ -99,6 +107,14 @@
 .productInfo {
   border: 5px solid rgb(34, 85, 121);
   border-radius: 10px;
+  box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  height: 590px;
+}
+
+.productInfo:hover {
+  cursor: pointer;
+  transform: scale(1.03);
 }
 
 .product {
@@ -123,4 +139,97 @@
   padding-right: 10px;
   padding-left: 10px;
   font-size: 20px;
+}
+
+.wrapperBtn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn {
+  background: #fff;
+  color: rgb(34, 85, 121);
+  border-radius: 5px;
+  position: relative;
+  padding: 20px 20px 20px 20px;
+  height: 32px;
+  line-height: 30px;
+  outline: none;
+  border: 1px solid rgb(34, 85, 121);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: border 0.5s ease;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(246, 138, 51);
+  color: #fff;
+  border-color: #fff;
+}
+
+.allProduct {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.allProductBtn {
+  color: rgb(34, 85, 121);
+  border: 1px solid rgb(34, 85, 121);
+  background: #fff;
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 10px 95px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.allProductBtn:hover {
+  border: 1px solid rgb(246, 138, 51);
+}
+
+.allProductBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(34, 85, 121) -700%,
+    rgb(246, 138, 51) 100%
+  );
+  transition: left 0.5s ease;
+}
+
+.allProductBtn:hover::before {
+  left: 0;
+  transition: left 0.5s ease;
+}
+
+.allProductBtn span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.allProductBtn:hover span {
+  color: #fff;
+}
+
+.allProductBtn .iconBtn {
+  font-size: 17px;
+  margin-left: 5px;
 }
